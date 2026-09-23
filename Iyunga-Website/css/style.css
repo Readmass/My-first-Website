@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    list-style-type: none;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-top: 130px;
+}
+
+.site-header {
+    background: navy;
+    width: 100%;
+    height: 120px;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 10px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-header p {
+    margin: 5px 0 0;
+}
+
+.site-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+
+
+.main-nav {
+    background: rgb(166, 166, 189);
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-nav a {
+    background: gold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+}
+
+.hero {
+    min-height: 120px;
+    width: 60%;
+    padding: 20px;
+    margin: 20px auto;
+    background: lightgray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.container1 > h1 {
+    grid-column: 1 / -1;
+}
+
+.Olevel,
+.Advance,
+.Technical-studies {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.ret {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    flex: 1;
+}
+
+.image {
+    flex: 2;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#Admition {
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    background: lightgray;
+    border-radius: 20px;
+}
+
+#Admition > .container2 {
+    display: block;
+    width: 100%;
+}
+
+#Admition > .container2 > h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+}
+
+.AT {
+    width: 100%;
+    margin: 0;
+    border: none;
+    display: block;
+}
+
+.admission-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    margin: 0 0 25px;
+}
+
+.student,
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.parent button {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 13px;
+    margin-top: 5px;
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.parent button:hover {
+    background: gold;
+    color: black;
+}
+
+#Contact form {
+    width: 30%;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact input[type="email"],
+#Contact input[type="text"] {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#Contact textarea {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#Contact button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.site-footer {
+    background: lightgray;
+    width: 100%;
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .container1 {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .student,
+    .parent {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+    #Admition {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #Contact form {
+        width: 90%;
+    }
+
+    .main-nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
